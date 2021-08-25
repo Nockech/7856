@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/notify_hours_edit"
+                android:layout_width="96dp"
+                android:layout_height="70dp"
+                android:hint="00"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/colorized_dark"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="40sp"
+                android:inputType="number"
+                android:theme="@style/EditTextStyle" />
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text=":"/>
+
+            <EditText
+                android:id="@+id/notify_minutes_edit"
+                android:layout_width="96dp"
+                android:layout_height="70dp"
+                android:hint="00"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:textColor="@color/accent"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorized_dark"
+                android:textCursorDrawable="@null"
+                android:textSize="40sp"
+                android:inputType="number"
+                android:theme="@style/EditTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/notify_alert_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alert_notify_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="0dp"
+            android:text="delete"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            style="@style/AlertButtonStyle"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alert_notify_add_new_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="0dp"
+            android:text="add new"
+            android:layout_gravity="end"
+            style="@style/AlertButtonStyle"/>
+    </LinearLayout>
+
+
+</LinearLayout>

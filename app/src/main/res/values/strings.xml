@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task Hub</string>
+
+    <!-- for Drawer -->
+    <string name="open">Open menu</string>
+    <string name="close">Close menu</string>
+
+    <string name="notify_channel_name">TaskNotifyChannel</string>
+    <string name="notify_channel_id">69420</string>
+</resources>
